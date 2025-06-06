@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra Pratap Sahu - Professional Biodata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .header-font {
+            font-family: 'Roboto Slab', serif;
+        }
+        /* Highlight Colors */
+        .highlight-blue { color: #2563eb; }
+        .highlight-green { color: #16a34a; }
+        .highlight-purple { color: #7c3aed; }
+        .highlight-orange { color: #f97316; }
+        .highlight-teal { color: #0d9488; }
+        .highlight-pink { color: #db2777; }
+        .highlight-yellow { color: #ca8a04; }
+        .highlight-red { color: #dc2626; }
+        
+        /* Section Title Styling */
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: #f97316;
+            text-decoration-thickness: 3px;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Card Styling & Hover Effects */
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease-in-out;
+            opacity: 0; /* Initially hidden for animation */
+            transform: translateY(20px);
+        }
+        .card.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Interactive list items */
+        .interactive-list-item {
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        .interactive-list-item:hover {
+             transform: scale(1.03);
+             color: #000;
+        }
+        
+        /* Skill Bar Animation */
+        .skill-bar-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .skill-bar {
+            height: 1.5rem;
+            border-radius: 1rem;
+            text-align: right;
+            padding-right: 0.5rem;
+            line-height: 1.5rem;
+            color: white;
+            font-weight: 600;
+            width: 0;
+            transition: width 1.5s ease-in-out;
+        }
+        
+        /* Sticky Navigation */
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        /* Back to Top Button */
+        #to-top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f97316;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            display: none; /* Initially hidden */
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            z-index: 100;
+        }
+        #to-top-btn:hover {
+            background-color: #ea580c;
+            transform: scale(1.1);
+        }
+        #to-top-btn.show {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Typing effect cursor */
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 2.5rem;
+            background-color: #fff;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white p-8 md:p-12 text-center">
+        <div class="container mx-auto">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAABgQFBwMCAQj/xABEEAACAQMCAwUFBgMFBgYDAAABAgADBBESIQUxQQYTIlFhcYEHMpGhI0KxwdHwFDNi4fEVJJKyFjRDU2NzgpOi0uJ0/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QALBEAAgIBAwMCBQQDAAAAAAAAAAECEQMSITEEE0FRcQUiYYGRsfBCUqHB4f/a.gAAMAwEAAhEDEQA/ANxEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQ- //2gma" alt="Rudra Pratap Sahu" class="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto border-4 border-orange-400 shadow-lg mb-6">
+            <h1 id="typing-header" class="text-4xl md:text-6xl font-bold header-font h-16 md:h-20"></h1>
+            <p class="text-xl md:text-2xl mt-2 font-light">Marketing and Sales Associate</p>
+            <div class="mt-4 text-lg">
+                <a href="mailto:rudrapr03@gmail.com" class="hover:text-orange-300 transition duration-300">rudrapr03@gmail.com</a> |
+                <span class="mx-2">6260583763</span> |
+                <span>Raipur (C.G.)</span>
+            </div>
+             <div class="mt-4">
+                <a href="https://www.linkedin.com/in/rudra-sahu-605b781a3" target="_blank" class="text-white hover:text-orange-300 transition duration-300 text-lg">
+                   LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="nav-sticky bg-white py-3">
+        <div class="container mx-auto flex justify-center items-center space-x-4 md:space-x-8 overflow-x-auto px-4">
+            <a href="#cover-letter" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Cover Letter</a>
+            <a href="#summary" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Summary</a>
+            <a href="#experience" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Experience</a>
+            <a href="#projects" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Projects</a>
+            <a href="#skills" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Skills</a>
+            <a href="#education" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Education</a>
+        </div>
+    </nav>
+
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Cover Letter Section -->
+        <section id="cover-letter" class="mb-12 pt-16 -mt-16">
+            <div class="card p-6 md:p-8">
+                 <h2 class="section-title text-blue-600">Cover Letter</h2>
+                 <p class="mb-4"><strong>Date:</strong> June 7, 2025</p>
+                <p class="mb-4"><strong>To The Hiring Manager,</strong></p>
+                <p class="mb-4">I am writing to express my enthusiastic interest in a challenging marketing and sales role within your esteemed two-wheeler automobile brand. With a <strong class="highlight-teal">robust background in sales, marketing, and customer relationship management</strong>, combined with a <strong class="highlight-purple">profound personal passion for motorcycles</strong> and the open road, I am confident in my ability to contribute significantly to your team in Raipur.</p>
+                <p class="mb-4">My experience at <strong class="highlight-green">Raipur Yamaha Autocare</strong> has provided me with direct insight into the local two-wheeler market. I am adept at building strong customer relationships, <strong class="highlight-blue">exceeding sales targets</strong>, and understanding the nuances of consumer needs in this segment. Furthermore, my achievement as a <strong class="highlight-orange">Hero Dirt Bike Racer</strong> is not just a personal accomplishment but a testament to my deep-seated passion and <strong class="highlight-teal">technical understanding of motorcycles</strong>. I don’t just sell two-wheelers; I live and breathe them.</p>
+                <p>I am eager to bring my unique blend of professional expertise and genuine enthusiasm to a leading brand like yours. I am particularly drawn to your company's reputation for <strong class="highlight-purple">innovation and quality</strong>, and I am keen to help drive your market presence in Chhattisgarh. Thank you for considering my application. I look forward to the possibility of discussing how I can be a <strong class="highlight-green">valuable asset</strong> to your team.</p>
+                <p class="mt-6 font-semibold">Sincerely,</p>
+                <p class="font-semibold">Rudra Pratap Sahu</p>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                
+                <!-- Professional Summary -->
+                <section id="summary" class="card p-6 md:p-8 pt-16 -mt-16">
+                    <h2 class="section-title text-purple-600">Professional Summary</h2>
+                    <p class="text-lg leading-relaxed"><strong class="highlight-pink">Dynamic and results-driven</strong> sales professional with a <strong class="highlight-teal">proven track record</strong> in selling diverse products and services. Adept at <strong class="highlight-blue">building and nurturing strong relationships with customers</strong>, which fosters trust and <strong class="highlight-yellow">brand loyalty</strong>. Spearheaded initiatives that consistently <strong class="highlight-green">met and exceeded sales targets</strong> through <strong class="highlight-orange">strategic planning and market analysis</strong>. Proficient in identifying customer needs and effectively presenting tailored solutions, contributing significantly to <strong class="highlight-purple">revenue growth</strong>. Experienced in collaborating with <strong class="highlight-pink">cross-functional teams</strong> to improve <strong class="highlight-teal">customer satisfaction</strong> and service delivery. Committed to ongoing personal and professional development to stay ahead in a competitive market.</p>
+                </section>
+
+                <!-- Professional Experience -->
+                <section id="experience" class="card p-6 md:p-8 pt-16 -mt-16">
+                    <h2 class="section-title text-green-600">Professional Experience</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-bold highlight-blue">Marketing and Sales Associate</h3>
+                            <p class="font-semibold">Raipur Yamaha Autocare, Raipur</p>
+                            <p class="text-sm text-gray-500">August 2024 - Present</p>
+                            <ul class="list-disc list-inside mt-2 ml-4 text-gray-700 space-y-1">
+                                <li>Engage with prospective customers to understand their needs and showcase the Yamaha product line, improving <strong class="highlight-red">lead conversion rates</strong>.</li>
+                                <li>Conduct <strong class="highlight-orange">dynamic product demonstrations</strong> and test rides, highlighting key features and benefits.</li>
+                                <li>Develop and execute <strong class="highlight-purple">local marketing strategies</strong> to increase <strong class="highlight-teal">brand visibility</strong> and footfall.</li>
+                                <li>Consistently <strong class="highlight-green">achieve and exceed monthly sales quotas</strong> for two-wheelers and accessories.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold highlight-blue">Sales Manager</h3>
+                            <p class="font-semibold">Open Road Riding Gears, Pune, Maharashtra</p>
+                            <p class="text-sm text-gray-500">July 2023 - March 2024</p>
+                            <ul class="list-disc list-inside mt-2 ml-4 text-gray-700 space-y-1">
+                                <li>Led a <strong class="highlight-pink">high-performing sales team</strong>, providing mentorship and continuous training on product knowledge and sales techniques.</li>
+                                <li>Designed and implemented new <strong class="highlight-blue">sales processes and CRM strategies</strong>, boosting team efficiency and performance tracking.</li>
+                                <li>Analyzed <strong class="highlight-yellow">sales data</strong> to identify trends and opportunities for growth.</li>
+                                <li>Fostered a collaborative and motivated team environment, resulting in a <strong class="highlight-green">15% increase in overall team sales</strong>.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold highlight-blue">Travel Consultant</h3>
+                            <p class="font-semibold">Har Din Holiday, Raipur, C.G.</p>
+                            <p class="text-sm text-gray-500">September 2022 - June 2023</p>
+                             <ul class="list-disc list-inside mt-2 ml-4 text-gray-700 space-y-1">
+                                <li>Consulted with clients to create and book <strong class="highlight-orange">personalized travel itineraries</strong>, including transport, lodging, and activities.</li>
+                                <li>Provided expert advice on various destinations, ensuring a <strong class="highlight-teal">seamless and memorable travel experience</strong> for clients.</li>
+                                <li>Managed all booking and payment processes with <strong class="highlight-purple">meticulous attention to detail</strong>.</li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h3 class="text-xl font-bold highlight-blue">Event Manager</h3>
+                            <p class="font-semibold">Innovative Monks, Raipur, C.G.</p>
+                            <p class="text-sm text-gray-500">January 2017 - December 2018</p>
+                             <ul class="list-disc list-inside mt-2 ml-4 text-gray-700 space-y-1">
+                               <li>Orchestrated a wide range of <strong class="highlight-pink">corporate and promotional events</strong> from concept to completion.</li>
+                               <li>Managed <strong class="highlight-blue">event budgets, vendor negotiations, and marketing</strong> to <strong class="highlight-green">maximize ROI</strong> and achieve client objectives.</li>
+                               <li>Successfully executed strategies that consistently led to <strong class="highlight-orange">high event attendance, sales, and profit margins</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects -->
+                <section id="projects" class="card p-6 md:p-8 pt-16 -mt-16">
+                    <h2 class="section-title text-orange-600">Projects</h2>
+                     <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-lg highlight-purple">Financial Statement Study (60 Days)</h3>
+                            <p>Conducted a project studying the <strong class="highlight-blue">effects of recession</strong> through comprehensive examination of the Reserve Bank of India's financial statements.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg highlight-purple">Current Accounting Trends (30 Days)</h3>
+                            <p>Completed a project focusing on <strong class="highlight-green">current accounting trends</strong> within manufacturing industries, showcasing adaptability to industry changes.</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-lg highlight-purple">Inflation and Deflation Study (2 Days)</h3>
+                            <p>Presented a detailed research report on <strong class="highlight-teal">inflation and deflation impacts</strong> on the economy.</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-lg highlight-purple">2019 General Election Report</h3>
+                            <p>Compiled a comprehensive report analyzing the 17th Lok Sabha general election results, providing insights into <strong class="highlight-pink">voter behavior and electoral dynamics</strong>.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Why Me for the Two-Wheeler Industry? -->
+                <section id="why-me" class="card p-6 md:p-8 bg-blue-50">
+                     <h2 class="section-title text-blue-600">Why Me?</h2>
+                    <ul class="list-disc list-inside space-y-3 text-lg">
+                        <li class="interactive-list-item"><strong class="highlight-orange">Hero Dirt Bike Racer:</strong> National level recognition demonstrates competitive spirit, skill, and deep product understanding.</li>
+                        <li class="interactive-list-item"><strong class="highlight-green">Passionate Enthusiast:</strong> Genuine love for motorcycles translates into authentic and persuasive salesmanship.</li>
+                        <li class="interactive-list-item"><strong class="highlight-blue">Local Market Knowledge:</strong> Direct experience at Raipur Yamaha provides invaluable insight into the local customer base.</li>
+                        <li class="interactive-list-item"><strong class="highlight-purple">Proven Sales Acumen:</strong> Consistent record of meeting and exceeding sales targets in diverse environments.</li>
+                        <li class="interactive-list-item"><strong class="highlight-pink">Leadership & Discipline:</strong> Background as an NCC Cadet and a National Award winner in Scouts showcases strong character and leadership potential.</li>
+                        <li class="interactive-list-item"><strong class="highlight-teal">Event & Promotion Expert:</strong> Proven experience in event management is ideal for organizing promotional events, test rides, and customer engagement activities.</li>
+                        <li class="interactive-list-item"><strong class="highlight-red">Adaptable & Eager Learner:</strong> PhD pursuit and diverse project work demonstrate a commitment to continuous learning and adaptability.</li>
+                        <li class="interactive-list-item"><strong class="highlight-yellow">Community Focused:</strong> Experience with Scouts & Guides highlights a focus on community service and teamwork.</li>
+                    </ul>
+                </section>
+
+                <!-- Soft Skills -->
+                <section id="skills" class="card p-6 md:p-8 pt-16 -mt-16">
+                    <h2 class="section-title text-teal-600">Core Competencies</h2>
+                    <div>
+                        <span class="font-semibold">Leadership & Team Motivation</span>
+                        <div class="skill-bar-container">
+                           <div class="skill-bar bg-blue-600" data-skill="95%"></div>
+                        </div>
+                        <span class="font-semibold">Sales Strategy & Execution</span>
+                        <div class="skill-bar-container">
+                           <div class="skill-bar bg-green-600" data-skill="92%"></div>
+                        </div>
+                        <span class="font-semibold">Customer Relationship Management (CRM)</span>
+                         <div class="skill-bar-container">
+                           <div class="skill-bar bg-purple-600" data-skill="88%"></div>
+                        </div>
+                         <span class="font-semibold">Market Analysis & Strategic Planning</span>
+                        <div class="skill-bar-container">
+                           <div class="skill-bar bg-red-600" data-skill="85%"></div>
+                        </div>
+                        <span class="font-semibold">Brand Promotion & Marketing Events</span>
+                        <div class="skill-bar-container">
+                           <div class="skill-bar bg-pink-600" data-skill="90%"></div>
+                        </div>
+                         <span class="font-semibold">Negotiation & Convincing Power</span>
+                        <div class="skill-bar-container">
+                           <div class="skill-bar bg-orange-600" data-skill="93%"></div>
+                        </div>
+                        <span class="font-semibold">Technical Product Expertise (Automotive)</span>
+                        <div class="skill-bar-container">
+                           <div class="skill-bar bg-yellow-600" data-skill="98%"></div>
+                        </div>
+                        <span class="font-semibold">Communication & Interpersonal Skills</span>
+                        <div class="skill-bar-container">
+                           <div class="skill-bar bg-teal-600" data-skill="94%"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section id="education" class="card p-6 md:p-8 pt-16 -mt-16">
+                    <h2 class="section-title text-indigo-600">Education</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-lg">PhD (Pursuing)</h3>
+                            <p>PRSU, Raipur - July 2023 - Present</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">PGDM (Marketing) - 63%</h3>
+                            <p>DY Patil Business School, Hinjewadi Pune - May 2021 - June 2023</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">B.Com (Marketing) - 50%</h3>
+                            <p>PRSU, Raipur - July 2016 - May 2019</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-lg">12th & 10th (Commerce) - 78%</h3>
+                            <p>Kendriya Vidyalaya No.2, Raipur - 2012 - 2016</p>
+                        </div>
+                    </div>
+                </section>
+                
+                 <!-- Achievements & Certificates -->
+                <section id="achievements" class="card p-6 md:p-8">
+                    <h2 class="section-title text-yellow-600">Achievements & Certificates</h2>
+                    <ul class="list-disc list-inside space-y-3">
+                        <li class="interactive-list-item"><strong class="highlight-orange">Hero Dirt Bike Racer</strong> - Hero MotoCorp (National Level)</li>
+                        <li class="interactive-list-item"><strong class="highlight-green">NCC 'C' Certificate (Army Wing)</strong> - National Cadet Corps</li>
+                        <li class="interactive-list-item"><strong class="highlight-blue">National Award</strong> in Bharat Scouts and Guides</li>
+                    </ul>
+                </section>
+
+                <!-- Interests & Languages -->
+                <section id="interests" class="card p-6 md:p-8">
+                    <h2 class="section-title text-pink-600">Interests & Languages</h2>
+                    <h3 class="font-bold text-lg mb-2">Interests:</h3>
+                    <p>Travel & Adventure, Stargazing, Nature, Reading, General Knowledge.</p>
+                     <h3 class="font-bold text-lg mt-4 mb-2">Languages:</h3>
+                    <p><strong class="highlight-blue">Hindi</strong> (Native), <strong class="highlight-green">English</strong> (Professional)</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Back to Top Button -->
+    <button id="to-top-btn" title="Go to top">▲</button>
+
+
+    <!-- Footer -->
+    <footer class="text-center p-6 mt-12 bg-gray-800 text-white">
+        <p>This biodata was created to showcase skills and experience for opportunities in the automobile industry.</p>
+        <p>&copy; 2025 Rudra Pratap Sahu. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const typingElement = document.getElementById('typing-header');
+            const textToType = "Rudra Pratap Sahu";
+            let index = 0;
+
+            function type() {
+                if (index < textToType.length) {
+                    typingElement.innerHTML = textToType.substring(0, index + 1) + '<span class="typing-cursor"></span>';
+                    index++;
+                    setTimeout(type, 100);
+                } else {
+                     typingElement.innerHTML = textToType; // Remove cursor when done
+                }
+            }
+            type();
+
+            // Intersection Observer for cards and skill bars
+            const animatedElements = document.querySelectorAll('.card, .skill-bar');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('card')) {
+                            entry.target.classList.add('is-visible');
+                        }
+                        if (entry.target.classList.contains('skill-bar')) {
+                            entry.target.style.width = entry.target.dataset.skill;
+                        }
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Back to Top Button
+            const toTopBtn = document.getElementById('to-top-btn');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    toTopBtn.classList.add('show');
+                } else {
+                    toTopBtn.classList.remove('show');
+                }
+            });
+            toTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+
+            // Adjust scroll position for sticky nav
+            const nav = document.querySelector('nav');
+            const navHeight = nav.offsetHeight;
+            document.querySelectorAll('section[id]').forEach(section => {
+                section.style.scrollMarginTop = `${navHeight}px`;
+            });
+        });
+    </script>
+</body>
+</html>
